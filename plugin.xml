@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="sqli-cordova-disk-space-plugin"
+        id="cordova-plugin-ns0m-disk-space"
         version="1.0.2">
     <name>DiskSpacePlugin</name>
-    <description>Disk Space</description>
+    <description>Cordova Disk Space Plugin</description>
     <license>MIT</license>
-    <keywords>diskSpace</keywords>
-    <repo></repo>
-    <issue></issue>
+    <keywords>cordova,disk,space</keywords>
+    <repo>https://github.com/ns0m/cordova-plugin-ns0m-disk-space</repo>
+    <issue>https://github.com/ns0m/cordova-plugin-ns0m-disk-space/issues</issue>
+
     <js-module src="diskSpace.js" name="DiskSpacePlugin">
         <clobbers target="DiskSpacePlugin"/>
     </js-module>
@@ -24,7 +24,7 @@
         <source-file src="src/android/DiskSpacePlugin.java" target-dir="src/com/sqli/cordova/diskSpace/"/>
     </platform>
 
-	<!-- windows -->
+    <!-- windows -->
     <platform name="windows">
         <config-file target="config.xml" parent="/*">
             <feature name="DiskSpacePlugin">
@@ -35,12 +35,11 @@
         <js-module src="src/windows/DiskSpacePluginProxy.js" name="DiskSpacePluginProxy">
             <merges target="" />
         </js-module>
-		
-		<!--<framework src="src/windows/DiskSpaceLibrary.winmd" target-dir="libs" custom="true"/>-->
-    <framework src="src/windows/native/DiskSpaceLibrary/DiskSpaceLibrary/DiskSpaceLibrary.csproj" custom="true" type="projectReference" versions="10.*" />
 
+        <!--<framework src="src/windows/DiskSpaceLibrary.winmd" target-dir="libs" custom="true"/>-->
+        <framework src="src/windows/native/DiskSpaceLibrary/DiskSpaceLibrary/DiskSpaceLibrary.csproj" custom="true" type="projectReference" versions="10.*" />
     </platform>
-	
+
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -53,4 +52,3 @@
         <source-file src="src/ios/DiskSpacePlugin.m"/>
     </platform>
 </plugin>
-

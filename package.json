@@ -1,13 +1,21 @@
 {
-  "name": "sqli-cordova-disk-space-plugin",
+  "name": "cordova-plugin-ns0m-disk-space",
   "version": "1.0.3",
-  "contributors": [
-    {
-      "name": "Damien Guérin",
-      "email": "dguerin@sqli.com"
-    }
-  ],
+  "description": "Cordova Disk Space Plugin",
+  "cordova": {
+    "id": "cordova-plugin-ns0m-disk-space",
+    "platforms": [
+      "android",
+      "ios",
+      "windows"
+    ]
+  },
+  "repository": "github:ns0m/cordova-plugin-ns0m-disk-space",
+  "bugs": "https://github.com/ns0m/cordova-plugin-ns0m-disk-space/issues",
   "keywords": [
+    "cordova",
+    "disk",
+    "space",
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios",
