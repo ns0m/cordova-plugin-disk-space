@@ -2,7 +2,6 @@ package com.sqli.cordova.diskSpace;
 
 import android.os.Environment;
 import android.os.StatFs;
-import android.util.Log;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -15,7 +14,6 @@ import org.json.JSONObject;
 import java.io.File;
 
 public class DiskSpacePlugin extends CordovaPlugin {
-    public static final String TAG = "DiskSpace Plugin";
 
     /**
      * Constructor.
@@ -32,7 +30,6 @@ public class DiskSpacePlugin extends CordovaPlugin {
      */
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        Log.v(TAG, "Initialisation DiskSpacePlugin");
     }
 
     public boolean execute(final String action, JSONArray args,

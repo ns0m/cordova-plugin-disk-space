@@ -1,10 +1,8 @@
 var exec = require('cordova/exec');
-function DiskSpace() {
-	console.log("DiskSpacePlugin is created");
-}
 
+function DiskSpace() {}
 DiskSpace.prototype.info = function (options, success, error) {
-    var execPromise = exec(function (result) {
+    exec(function (result) {
         if (success) {
             success(result);
         }

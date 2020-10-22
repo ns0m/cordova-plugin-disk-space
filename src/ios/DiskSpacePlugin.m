@@ -47,8 +47,7 @@
         [[NSFileManager defaultManager] fileExistsAtPath:[fileSystemItem path] isDirectory:&directory];
         if (!directory) {
             result += [[[[NSFileManager defaultManager] attributesOfItemAtPath:[fileSystemItem path] error:nil] objectForKey:NSFileSize] unsignedIntegerValue];
-        }
-        else {
+        } else {
             result += [self getDirectoryFileSize:fileSystemItem];
         }
     }
