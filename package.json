@@ -20,5 +20,6 @@
     "cordova-android",
     "cordova-ios",
     "cordova-windows"
-  ]
+  ],
+  "license": "MIT"
 }
