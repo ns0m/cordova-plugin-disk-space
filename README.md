@@ -6,14 +6,14 @@ cordova plugin add cordova-plugin-ns0m-disk-space
 ---
 
 # Disk Space Plugin
-This plugin allows to get information about disk space in Android / iOS / Windows 10 platforms.
+This plugin allows getting information about disk space in Android / iOS / Windows 10 platforms.
 
 ## Installation
 To use this plugin in a project, you have to do:
 
-	cordova plugin add https://github.com/sqli/sqli-cordova-disk-space-plugin.git
+	cordova plugin add sqli-cordova-disk-space-plugin
 
-Add your platforms targeted:
+Add your targeted platforms:
 
 	cordova platform add android
 	cordova platform add ios
@@ -21,11 +21,11 @@ Add your platforms targeted:
 
 ## Usage
 
-1- You can get disk information by executing the info function:
+1- You can get disk information by executing the `info` function:
 
 	DiskSpacePlugin.info(options, successCallback, errorCallback);
 
-Where options is a javascript object:
+Where _options_ is a javascript object:
 
 	location: 1 // To get information about external storage (For android only)
 	location: 2 // To get information about internal storage (For android only)
